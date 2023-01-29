@@ -1,13 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+    <template id="card-template">
+        <div class="card col-8" style="width: 18rem; margin:10px">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+            </div>
+        </div>
+    </template>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Lab 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <title>Lab 4</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid"> 
+            <a class="navbar-brand" href="#">My Bike Garage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Features</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a> </li>
+                </ul>
+            </div>
+        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSocial" aria-controls="navbarSocial" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSocial">
+                <ul class="navbar-nav">
+                    <li class="nav-social"><a class="nav-link" href="#">Facebook</a></li>
+                    <li class="nav-social"><a class="nav-link" href="#">Instagram</a> </li>
+                    <li class="nav-social"><a class="nav-link" href="#">Tiktok</a> </li>
+                </ul>
+            </div>
+    </nav><br>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" >
+                    <img src="https://th.bing.com/th/id/R.d5ee883bf301e91b7cdfbfb1ccdef6e9?rik=jrppuxChAVvEHQ&riu=http%3a%2f%2fmoto.zombdrive.com%2fimages%2fyamaha-fz16-9.jpg&ehk=xdNHMjx%2bWia9efSoEInreO5bwrf1hiDaFdYr12676rU%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="FZ16">
+                    <div class="card-body">
+                        <p class="card-text">The old bike</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" >
+                    <img src="https://th.bing.com/th/id/OIP.IBNHkpMYExgM8fZ73DTDeQHaEK?pid=ImgDet&rs=1" class="card-img-top" alt="Sniper155">
+                    <div class="card-body">
+                        <p class="card-text">The current bike</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" >
+                    <img src="https://www.totalmotorcycle.com/wp-content/uploads/2017/08/2018-Harley-Davidson-Fat-Bob4.jpg" class="card-img-top" alt="Harley-Davidson">
+                    <div class="card-body">
+                        <p class="card-text">The Dream bike</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" >
+                    <img src="https://allelectricmotorcycle.com/wp-content/uploads/2021/01/20210118_145944_20.jpg" class="card-img-top" alt="flamingo">
+                    <div class="card-body">
+                        <p class="card-text">The Future bike</p>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <main>
+            <div id='bike-list' class="row">
+    
+            </div>
+        </main>
     
 </body>
 <script src="script.js"></script>

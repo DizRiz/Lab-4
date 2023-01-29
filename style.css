@@ -1,0 +1,13 @@
+.card {
+    width: 18rem;
+}
+
+.card-img-top {
+    width: 18rem;
+    height: 18rem;
+}
+
+#bike-list {
+    display: flex;
+    justify-content: center;
+}
